@@ -115,6 +115,25 @@ header {
     border-left: none;
  }
 
+.upper {
+    margin: 0 auto;
+    flex: 0 0 auto;
+    height: auto;
+    width: 100%;
+    background: #ffffff;
+}
+
+.uppermenu {
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.uppermenu ul li{
+    display: inline-block;
+}
+
 .contents {
     margin: 0 auto;
     flex: 1 0 auto;
@@ -128,39 +147,38 @@ header {
     margin: 0 auto;
 }
 
-.news {
+.left-menu {
     width: 350px;
     height: 560px;
     float: left;
-    background: #777777;
-    color: #e4e4e4;
+    background: #ffffff;
+    color: #767676;
     padding: 20px 40px 10px 30px;
 }
 
-.news ul {
-    list-style-type: none;
-    padding-right: 25px;
+.left-menu ul{
+    list-style-type: circle;
 }
 
-.news a{
-    color: #e4e4e4;
-    text-decoration: none;
-}
-.news li {
-    margin-top: 20px;
+.left-menu ul li{
+    padding: 5px;
+    margin: 3px;
 }
 
-.news h2 {
-    font-size: 40px;
-    color: white;
+.left-menu ul li:hover{
+
 }
 
-.archive {
-    text-align: right;
-    margin-top: 40px;
+.left-menu li ul{
+    display: none;
 }
-.archive a {
-    text-decoration: underline;
+
+.left-menu li:hover ul{
+    display: block;
+}
+
+.left-menu li ul li:hover{
+
 }
 
 .about {
@@ -198,14 +216,14 @@ header {
 
 .slider {
     height: 400px;
-    width: 1000px;
+    width: 100%;
     background: #f9f9f9;
     margin: 0 auto;
 }
 
 .ss {
     height: 400px;
-    width: 1000px;
+    width: 100%;
     background: #f9f9f9;
     margin: 0 auto;
     position: relative;
@@ -222,7 +240,7 @@ img {
     height: 61px;
     background: url(images/prev.png) no-repeat;
     position: absolute;
-    left: 0;
+    left: calc(50% - 490px);
     top: 50%;
     opacity: 0.3;
     margin-top: -30.5px;
@@ -236,7 +254,7 @@ img {
     height: 61px;
     background: url(images/next.png) no-repeat;
     position: absolute;
-    right: 0;
+    right: calc(50% - 490px);
     top: 50%;
     opacity: 0.3;
     margin-top: -30.5px;
@@ -244,6 +262,9 @@ img {
     z-index: 100;
 }
 
+.pagin {
+    margin: 0 auto;
+}
 
 footer {
     display: flex;
