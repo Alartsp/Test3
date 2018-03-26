@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <title>Title</title>
     <meta charset="UTF-8">
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+
+    // Initialize the slider
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                pager: false,
+                auto: true
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -35,9 +48,12 @@
             </ul>
         </div>
     </div>
-    <div class="slider">
-        <div>
-            <img src="images/image.jpg" alt="image" title="image">
+
+    <div class="ss">
+        <div class="slider">
+            <div><img src="images/image.jpg" alt="image" title="image"></div>
+            <div><img src="images/image2.jpg" alt="image2" title="image2"></div>
+            <div><img src="images/image3.jpg" alt="image3" title="image3"></div>
         </div>
     </div>
 
