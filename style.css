@@ -132,6 +132,15 @@ header {
 
 .uppermenu ul li{
     display: inline-block;
+    text-decoration: underline;
+}
+
+.uppermenu ul li:last-child{
+    text-decoration: none;
+}
+
+.uppermenu li:not(:last-child):after {
+    content: ' / ';
 }
 
 .contents {
@@ -148,25 +157,20 @@ header {
 }
 
 .left-menu {
-    width: 350px;
-    height: 560px;
+    width: 200px;
+    height: auto;
     float: left;
     background: #ffffff;
     color: #767676;
-    padding: 20px 40px 10px 30px;
+    padding: 10px;
 }
 
-.left-menu ul{
-    list-style-type: circle;
-}
-
-.left-menu ul li{
+.left-menu li{
     padding: 5px;
-    margin: 3px;
 }
 
 .left-menu ul li:hover{
-
+    text-decoration: underline;
 }
 
 .left-menu li ul{
@@ -178,13 +182,50 @@ header {
 }
 
 .left-menu li ul li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
+.left-menu li ul li{
+    list-style-type: disc;
+    list-style-position: inside
+}
+
+.left-menu li ul li a{
+    text-decoration: none;
+    color: #767676;
+}
+
+.price {
+    margin-top: 65px;
+    margin-left: 0;
+}
+
+.price p{
+    margin-left: -15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.under {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .about {
-    width: 630px;
+    width: 800px;
+    right: 0;
+    margin-left: 200px;
+}
+
+.about-l {
+    width: 370px;
+    float: left;
+}
+
+.about-r {
+    width: 370px;
     float: right;
-    padding: 20px 40px 10px 30px;
 }
 
 .about p {
